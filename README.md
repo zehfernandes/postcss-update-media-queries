@@ -1,12 +1,12 @@
 # PostCSS Update Media Queries [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin to generate and update media queries for functional CSS ([Tachyons] FTW).
+[PostCSS] plugin to generate and update media queries for functional CSS ([Tachyons](https://github.com/tachyons-css/tachyons) FTW).
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/zehfernandes/postcss-update-media-queries.svg
 [ci]:      https://travis-ci.org/zehfernandes/postcss-update-media-queries
 
-## Input
+### Input
 ```css
 @custom-media --breakpoint-not-small screen and (min-width: 30em);
 @custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
@@ -14,7 +14,7 @@
 .underline    { text-decoration: underline; }
 ```
 
-## Output
+### Output
 ```css
 @custom-media --breakpoint-not-small screen and (min-width: 30em);
 @custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
@@ -48,4 +48,4 @@ postcss([ updateMediaQuerie({
     }) ]).process(input.css)
 ```
 
-Look at [tachyons-bulild-queries]  to learn more
+Look at [tachyons-bulild-mediaqueries](https://github.com/zehfernandes/tachyons-build-mediaquerie) to learn more
