@@ -6,6 +6,7 @@
 [ci-img]:  https://travis-ci.org/zehfernandes/postcss-update-media-queries.svg
 [ci]:      https://travis-ci.org/zehfernandes/postcss-update-media-queries
 
+## Input
 ```css
 @custom-media --breakpoint-not-small screen and (min-width: 30em);
 @custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
@@ -15,6 +16,7 @@
 .no-underline { text-decoration: none; }
 ```
 
+## Output
 ```css
 @custom-media --breakpoint-not-small screen and (min-width: 30em);
 @custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
