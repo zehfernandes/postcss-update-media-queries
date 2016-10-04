@@ -8,17 +8,11 @@
 
 ### Input
 ```css
-@custom-media --breakpoint-not-small screen and (min-width: 30em);
-@custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
-
 .underline    { text-decoration: underline; }
 ```
 
 ### Output
 ```css
-@custom-media --breakpoint-not-small screen and (min-width: 30em);
-@custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
-
 .underline { text-decoration: underline; }
 
 @media (--breakpoint-not-small) {
@@ -38,8 +32,7 @@ const updateMediaQuerie = require('postcss-update-media-queries')
 // Array structure for media queries
 let medias = [
     {name: '(--breakpoint-not-small)', alias: '-ns' },
-    {name: '(--breakpoint-medium)', alias: '-m' },
-    {name: '(--breakpoint-large)', alias: '-l' }
+    {name: '(--breakpoint-medium)', alias: '-m' }
 ]
 
 postcss([ updateMediaQuerie({
