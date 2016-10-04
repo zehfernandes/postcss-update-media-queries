@@ -40,6 +40,12 @@
 ```js
 const updateMediaQuerie = require('postcss-update-media-queries')
 
+let medias = [
+    {name: '(--breakpoint-not-small)', alias: '-ns' },
+    {name: '(--breakpoint-medium)', alias: '-m' },
+    {name: '(--breakpoint-large)', alias: '-l' }
+]
+
 postcss([ updateMediaQuerie({ medias: medias }) ]).process(input.css)
 ```
 
