@@ -1,0 +1,38 @@
+{
+  "name": "postcss-update-media-queries",
+  "version": "0.0.0",
+  "description": "PostCSS plugin Generate and update media queries for functional css",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "media-queries",
+    "tachyons",
+    "generator"
+  ],
+  "author": "zehfernandes <ozehfernandes@gmail.com>",
+  "license": "MIT",
+  "repository": "zehfernandes/postcss-update-media-queries",
+  "bugs": {
+    "url": "https://github.com/zehfernandes/postcss-update-media-queries/issues"
+  },
+  "homepage": "https://github.com/zehfernandes/postcss-update-media-queries",
+  "dependencies": {
+    "postcss": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-postcss": "^2.0.2",
+    "mocha": "*",
+    "perfectionist": "^2.3.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss"
+  }
+}
